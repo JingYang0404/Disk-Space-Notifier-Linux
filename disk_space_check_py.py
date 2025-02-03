@@ -48,7 +48,7 @@ def insufficient_prompt(disk_space):
             # Send an email alert if disk usage exceeds 80%
             current_usage = disk_space
             process2 = subprocess.run(
-                ["mail", "-s", "Disk Alert!", "jyma_x@oppstar.com.my"],
+                ["mail", "-s", "Disk Alert!", "email@email.com"],
                 input=f"Max usage exceeded. Disk usage at {current_usage}%",
                 text=True
             )
